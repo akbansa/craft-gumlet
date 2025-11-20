@@ -2,6 +2,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
+    "craftcms/cloud": "*",
     "craftcms/cms": "^5.0.0",
     "croxton/imgixer": "3.0.1",
     "gumlet/craft-gumlet-imagetransformer": "^1.3",
