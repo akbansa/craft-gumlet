@@ -1,0 +1,106 @@
+d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
+{% set fallbackTitle = 'About Us' %}
+{% set fallbackBody = [
+    'We are a creative studio focused - on crafting delightful digital experiences. Every product we ship is rooted in curiosity, empathy, and a drive to make the web feel just a little more human.',
+    'Our team blends engineering, design, and storytelling to help brands express themselves with clarity. Collaboration fuels every project—alongside our clients, we prototype boldly, iterate quickly, and launch confidently.'
+] %}
+{% set galleryImages = aboutEntry ? aboutEntry.images.limit(2).all() : [] %}
+
+{% set fallbackImages = [
+    { url: '/assets/images/about-team.svg', alt: 'Team collaborating illustration' },
+    { url: '/assets/images/studio-desk.svg', alt: 'Studio desk illustration' }
+] %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ aboutEntry ? aboutEntry.title : fallbackTitle }}</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #11243a;
+        }
+
+        main {
+            max-width: 900px;
+            width: calc(100% - 32px);
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 25px 80px rgba(17, 36, 58, 0.15);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 15px 45px rgba(43, 63, 95, 0.2);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>{{ aboutEntry ? aboutEntry.title : fallbackTitle }}</h1>
+    {% if aboutEntry and aboutEntry.bodyCopy %}
+        {{ aboutEntry.bodyCopy|nl2br }}
+    {% else %}
+        {% for paragraph in fallbackBody %}
+            <p>{{ paragraph }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <div class="gallery">
+        {% if galleryImages|length %}
+            {% for asset in galleryImages %}
+                {% set altText = asset.alt ?? asset.title ?? 'About gallery image' %}
+                <img src="{{ asset.url }}" alt="{{ altText }}">
+
+
+{{craft.gumlet.buildUrl(asset, {width:300, gumlet: "sa"}, {blur: 10})}}
+<br>
+{{gumletUrl(asset, {width:300, gumlet: "asas"})}}
+
+
+
+            {% endfor %}
+
+        {% else %}
+            {% for placeholder in fallbackImages %}
+                <img src="{{ placeholder.url }}" alt="{{ placeholder.alt }}">
+            {% endfor %}
+        {% endif %}
+    </div>
+</main>
+</body>
+</html>
+

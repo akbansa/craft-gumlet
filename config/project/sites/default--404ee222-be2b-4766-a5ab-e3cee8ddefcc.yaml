@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: 'Gumlet craft'
+primary: true
+siteGroup: 99e06c7b-2b1e-4a14-b3e0-09a61762ed9d # Gumlet craft
+sortOrder: 1

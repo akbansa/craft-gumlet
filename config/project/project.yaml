@@ -1,0 +1,48 @@
+dateModified: 1763639248
+email:
+  fromEmail: anshul@gumlet.com
+  fromName: 'Gumlet craft'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  main_filesystem:
+    hasUrls: true
+    name: 'main filesystem'
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    1e3198ae-c1d0-4212-a283-2c862521da4b: images # images
+    1f3fb4e3-16de-43c1-a491-4c61bf0de170: images # images
+    8dbe6d4c-24da-4cc1-9c08-4b42c0f8905f: 'About Page' # About Page
+    72c07018-d23e-4b4e-b56c-998593fdd5ae: 'Public Schema' # Public Schema
+    99e06c7b-2b1e-4a14-b3e0-09a61762ed9d: 'Gumlet craft' # Gumlet craft
+    404ee222-be2b-4766-a5ab-e3cee8ddefcc: 'Gumlet craft' # Gumlet craft
+    b2c9e2b8-2f7f-4dfe-8d4f-89c75ee3cb31: 'About Us' # About Us
+    c9b7f8b9-6d0f-4b5e-899c-1461d8d26f02: 'Body Copy' # Body Copy
+    d70020f7-4b56-4752-b33e-6d5c4cd485a5: thumbnail # thumbnail
+    fa5b11ef-72fa-4f08-9b60-4c933e0da189: 'Title 1' # Title 1
+plugins:
+  gumlet-imagetransformer:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.3.3
+  imgixer:
+    edition: standard
+    enabled: false
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Gumlet craft'
+  retryDuration: null
+  schemaVersion: 5.8.0.3
+  timeZone: Asia/Kolkata
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

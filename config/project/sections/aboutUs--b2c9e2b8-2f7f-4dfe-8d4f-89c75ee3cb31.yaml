@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 8dbe6d4c-24da-4cc1-9c08-4b42c0f8905f # About Page
+handle: aboutUs
+maxAuthors: 1
+name: 'About Us'
+previewTargets:
+  -
+    label: 'About page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  404ee222-be2b-4766-a5ab-e3cee8ddefcc: # Gumlet craft
+    enabledByDefault: true
+    hasUrls: true
+    template: about-us/_entry.twig
+    uriFormat: about-us
+type: single

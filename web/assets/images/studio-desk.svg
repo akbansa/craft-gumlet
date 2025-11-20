@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+    <defs>
+        <linearGradient id="deskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffe29f" />
+            <stop offset="100%" stop-color="#ffa99f" />
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="800" fill="#fdf1e0" />
+    <rect x="150" y="200" width="900" height="400" rx="40" fill="url(#deskGrad)" />
+    <rect x="190" y="240" width="300" height="220" rx="24" fill="#ffffff" />
+    <rect x="710" y="240" width="300" height="220" rx="24" fill="#ffffff" />
+    <rect x="520" y="260" width="160" height="320" rx="18" fill="#ffffff" />
+    <circle cx="270" cy="420" r="36" fill="#ffa99f" opacity="0.6" />
+    <circle cx="930" cy="420" r="36" fill="#ffa99f" opacity="0.6" />
+    <text x="50%" y="620" fill="#b45d5d" font-size="42" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
+        Studio Desk
+    </text>
+</svg>
+
