@@ -83,13 +83,13 @@ d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
         {% if galleryImages|length %}
             {% for asset in galleryImages %}
                 {% set altText = asset.alt ?? asset.title ?? 'About gallery image' %}
+                {{asset.url}}<br>
+                {{ craft.gumlet.buildUrl(asset, {width:300}, {blur: 10}) }}
+                <br>
                 <img src="{{ craft.gumlet.buildUrl(asset, {width:300}, {blur: 10}) }}" alt="{{ altText }}">
-
+                <br>
                 <img src="{{ gumletUrl(asset, {width:400}, {blur: 50}) }}" alt="{{ altText }}">
-                    
-
-
-
+================<br>
             {% endfor %}
 
         {% else %}
