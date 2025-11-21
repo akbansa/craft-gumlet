@@ -4,7 +4,7 @@ d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
     'We are a creative studio focused - on crafting delightful digital experiences. Every product we ship is rooted in curiosity, empathy, and a drive to make the web feel just a little more human.',
     'Our team blends engineering, design, and storytelling to help brands express themselves with clarity. Collaboration fuels every project—alongside our clients, we prototype boldly, iterate quickly, and launch confidently.'
 ] %}
-{% set galleryImages = aboutEntry ? aboutEntry.images.limit(2).all() : [] %}
+{% set galleryImages = aboutEntry ? aboutEntry.images.all() : [] %}
 
 {% set fallbackImages = [
     { url: '/assets/images/about-team.svg', alt: 'Team collaborating illustration' },
@@ -83,12 +83,10 @@ d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
         {% if galleryImages|length %}
             {% for asset in galleryImages %}
                 {% set altText = asset.alt ?? asset.title ?? 'About gallery image' %}
-                <img src="{{ asset.url }}" alt="{{ altText }}">
+                <img src="{{ craft.gumlet.buildUrl(asset, {width:300}, {blur: 10}) }}" alt="{{ altText }}">
 
-
-{{craft.gumlet.buildUrl(asset, {width:300, gumlet: "sa"}, {blur: 10})}}
-<br>
-{{gumletUrl(asset, {width:300, gumlet: "asas"})}}
+                <img src="{{ gumletUrl(asset, {width:400}, {blur: 10}) }}" alt="{{ altText }}">
+                    
 
 
 
