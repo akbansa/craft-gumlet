@@ -85,7 +85,7 @@ d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
                 {% set altText = asset.alt ?? asset.title ?? 'About gallery image' %}
                 <img src="{{ craft.gumlet.buildUrl(asset, {width:300}, {blur: 10}) }}" alt="{{ altText }}">
 
-                <img src="{{ gumletUrl(asset, {width:400}, {blur: 10}) }}" alt="{{ altText }}">
+                <img src="{{ gumletUrl(asset, {width:400}, {blur: 50}) }}" alt="{{ altText }}">
                     
 
 
