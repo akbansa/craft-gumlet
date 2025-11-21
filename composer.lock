@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05351ec8e47198729a7f8af256671586",
+    "content-hash": "7fdb654b3281450d1ce9dd67241f6a7a",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -220,57 +220,6 @@
             "description": "BaconQrCode is a QR code generator for PHP.",
             "homepage": "https://github.com/Bacon/BaconQrCode",
             "time": "2022-12-07T17:46:57+00:00"
-        },
-        {
-            "name": "beberlei/assert",
-            "version": "v3.3.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/b5fd8eacd8915a1b627b8bfc027803f1939734dd",
-                "reference": "b5fd8eacd8915a1b627b8bfc027803f1939734dd",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "ext-simplexml": "*",
-                "php": "^7.1 || ^8.0"
-            },
-            "suggest": {
-                "ext-intl": "Needed to allow Assertion::count(), Assertion::isCountable(), Assertion::minCount(), and Assertion::maxCount() to operate on ResourceBundles"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/Assert/functions.php"
-                ],
-                "psr-4": {
-                    "Assert\\": "lib/Assert"
-                }
-            },
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Richard Quadling",
-                    "email": "rquadling@gmail.com",
-                    "role": "Collaborator"
-                }
-            ],
-            "description": "Thin assertion library for input validation in business models.",
-            "keywords": [
-                "assert",
-                "assertion",
-                "validation"
-            ],
-            "time": "2024-07-15T13:18:35+00:00"
         },
         {
             "name": "bref/bref",
@@ -957,59 +906,6 @@
                 "yii2"
             ],
             "time": "2015-01-27T10:53:51+00:00"
-        },
-        {
-            "name": "croxton/imgixer",
-            "version": "3.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/croxton/imgixer/zipball/96e3f1c2e72455f83e5869840704e0fc7524d57d",
-                "reference": "96e3f1c2e72455f83e5869840704e0fc7524d57d",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "imagekit/imagekit": "^3.0",
-                "imgix/imgix-php": "~3.1.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Imgixer",
-                "handle": "imgixer",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/croxton/imgixer/master/CHANGELOG.md",
-                "class": "croxton\\imgixer\\Imgixer"
-            },
-            "autoload": {
-                "psr-4": {
-                    "croxton\\imgixer\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Croxton",
-                    "homepage": "https://hallmark-design.co.uk"
-                }
-            ],
-            "description": "Generate Imgix URLs.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "imgix",
-                "imgixer"
-            ],
-            "support": {
-                "docs": "https://github.com/croxton/imgixer/blob/develop-v5/README.md",
-                "issues": "https://github.com/croxton/imgixer/issues",
-                "source": "https://github.com/croxton/imgixer"
-            },
-            "time": "2024-07-16T16:37:04+00:00"
         },
         {
             "name": "crwlr/query-string",
@@ -2218,73 +2114,6 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2023-06-05T12:46:42+00:00"
-        },
-        {
-            "name": "imagekit/imagekit",
-            "version": "3.0.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/imagekit-developer/imagekit-php/zipball/a03aaf05df00786fddea82ac30249492125064c6",
-                "reference": "a03aaf05df00786fddea82ac30249492125064c6",
-                "shasum": ""
-            },
-            "require": {
-                "beberlei/assert": "^3.3",
-                "ext-curl": "*",
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "~6.0 || ~7.0",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ImageKit\\": "src/ImageKit/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Imagekit",
-                    "homepage": "https://github.com/imagekit-developer/imagekit-php/graphs/contributors"
-                }
-            ],
-            "description": "PHP library for Imagekit",
-            "homepage": "https://github.com/imagekit-developer/imagekit-php",
-            "keywords": [
-                "image management",
-                "imagekit",
-                "library"
-            ],
-            "time": "2023-07-21T11:45:54+00:00"
-        },
-        {
-            "name": "imgix/imgix-php",
-            "version": "3.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/ff013094feb4855c561999f2248f3fafe0a25ec1",
-                "reference": "ff013094feb4855c561999f2248f3fafe0a25ec1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Imgix\\": "src/"
-                }
-            },
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "A PHP client library for generating URLs with imgix.",
-            "keywords": [
-                "imgix"
-            ],
-            "time": "2019-08-29T23:30:57+00:00"
         },
         {
             "name": "lcobucci/clock",
@@ -8955,10 +8784,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
