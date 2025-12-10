@@ -90,10 +90,13 @@ d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
                 <br>
                 <img src="{{ gumletUrl(asset, {width:400}, {blur: 50}) }}" alt="{{ altText }}">
 <br>checking new option <br>
-                {% do asset.setTransform({ 
-                    width: 300, 
-                    height: 300,
-                }) %}
+                {% set thumb = {
+                    mode: 'crop',
+                    width: 100,
+                    height: 100,
+                    quality: 75,
+                    position: 'top-center'
+                } %}
 
                 <img
                 src="{{ asset.getUrl(thumb) }}"

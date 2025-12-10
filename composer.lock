@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d2f65d876389eeef2501358a800b180",
+    "content-hash": "65fb3dc1125946ac9b1a765f06322e44",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1601,16 +1601,16 @@
         },
         {
             "name": "gumlet/craft-gumlet-imagetransformer",
-            "version": "1.3.3",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akbansa/craft-gumlet-imagetransformer.git",
-                "reference": "d9a62ab955fd16be285042cf741ac1dda88467a5"
+                "reference": "67beb9e110fa08d1cc5133bd2c000b2e5a34ae87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akbansa/craft-gumlet-imagetransformer/zipball/d9a62ab955fd16be285042cf741ac1dda88467a5",
-                "reference": "d9a62ab955fd16be285042cf741ac1dda88467a5",
+                "url": "https://api.github.com/repos/akbansa/craft-gumlet-imagetransformer/zipball/67beb9e110fa08d1cc5133bd2c000b2e5a34ae87",
+                "reference": "67beb9e110fa08d1cc5133bd2c000b2e5a34ae87",
                 "shasum": ""
             },
             "require": {
@@ -1645,7 +1645,7 @@
                     "homepage": "https://github.com/akbansa"
                 }
             ],
-            "description": "Gumlet asset transforms for Craft CMS",
+            "description": "Gumlet image transformer for Craft CMS",
             "keywords": [
                 "Craft",
                 "cms",
@@ -1658,9 +1658,9 @@
             "support": {
                 "docs": "https://github.com/akbansa/craft-gumlet-imagetransformer",
                 "issues": "https://github.com/akbansa/craft-gumlet-imagetransformer/issues",
-                "source": "https://github.com/akbansa/craft-gumlet-imagetransformer/tree/v1.3.3"
+                "source": "https://github.com/akbansa/craft-gumlet-imagetransformer/tree/1.4.1"
             },
-            "time": "2025-11-20T11:45:37+00:00"
+            "time": "2025-12-10T06:42:20+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
