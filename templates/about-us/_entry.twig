@@ -89,7 +89,36 @@ d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
                 <img src="{{ craft.gumlet.buildUrl(asset, {width:300}, {blur: 10}) }}" alt="{{ altText }}">
                 <br>
                 <img src="{{ gumletUrl(asset, {width:400}, {blur: 50}) }}" alt="{{ altText }}">
-================<br>
+<br>checking new option <br>
+                {% do asset.setTransform({ 
+                    width: 300, 
+                    height: 300,
+                }) %}
+
+                <img
+                src="{{ asset.getUrl(thumb) }}"
+                width="{{ asset.getWidth(thumb) }}"
+                height="{{ asset.getHeight(thumb) }}">
+================
+
+checking new option 2
+<br>
+{# Set the transform #}
+{% do asset.setTransform({ 
+    width: 300, 
+    height: 300,
+}) %}
+
+{# Render the tag #}
+{{ tag('img', {
+  src: asset.url,
+  width: asset.width,
+  height: asset.height,
+  srcset: asset.getSrcset(['1.5x', '2x', '3x']),
+  alt: asset.title,
+}) }}
+
+<br>
             {% endfor %}
 
         {% else %}
