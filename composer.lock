@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65fb3dc1125946ac9b1a765f06322e44",
+    "content-hash": "741bc0ab08784fc0eb6e3fac6eab1d4c",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1601,16 +1601,16 @@
         },
         {
             "name": "gumlet/craft-gumlet-imagetransformer",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akbansa/craft-gumlet-imagetransformer.git",
-                "reference": "67beb9e110fa08d1cc5133bd2c000b2e5a34ae87"
+                "reference": "a110ae69d6483b746ac723714639c6f98caebf2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akbansa/craft-gumlet-imagetransformer/zipball/67beb9e110fa08d1cc5133bd2c000b2e5a34ae87",
-                "reference": "67beb9e110fa08d1cc5133bd2c000b2e5a34ae87",
+                "url": "https://api.github.com/repos/akbansa/craft-gumlet-imagetransformer/zipball/a110ae69d6483b746ac723714639c6f98caebf2c",
+                "reference": "a110ae69d6483b746ac723714639c6f98caebf2c",
                 "shasum": ""
             },
             "require": {
@@ -1658,9 +1658,9 @@
             "support": {
                 "docs": "https://github.com/akbansa/craft-gumlet-imagetransformer",
                 "issues": "https://github.com/akbansa/craft-gumlet-imagetransformer/issues",
-                "source": "https://github.com/akbansa/craft-gumlet-imagetransformer/tree/1.4.1"
+                "source": "https://github.com/akbansa/craft-gumlet-imagetransformer/tree/1.5.0"
             },
-            "time": "2025-12-10T06:42:20+00:00"
+            "time": "2025-12-10T08:25:05+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
