@@ -1,4 +1,4 @@
-dateModified: 1765352259
+dateModified: 1765357186
 email:
   fromEmail: anshul@gumlet.com
   fromName: 'Gumlet craft'
@@ -8,9 +8,12 @@ fs:
     hasUrls: true
     name: 'main filesystem'
     settings:
-      path: '@webroot/uploads'
-    type: craft\fs\Local
-    url: '@web/uploads'
+      baseUrl: null
+      expires: '1 years'
+      localFsPath: '@webroot/uploads'
+      localFsUrl: /uploads
+      subpath: null
+    type: craft\cloud\fs\AssetsFs
 meta:
   __names__:
     1e3198ae-c1d0-4212-a283-2c862521da4b: images # images
@@ -32,6 +35,9 @@ plugins:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
+  oembed:
+    edition: standard
+    enabled: true
 system:
   edition: solo
   live: true

@@ -6,7 +6,8 @@
     "craftcms/cms": "^5.0.0",
     "croxton/imgixer": "^3.0",
     "gumlet/craft-gumlet-imagetransformer": "^1.5",
-    "vlucas/phpdotenv": "^5.4.0"
+    "vlucas/phpdotenv": "^5.4.0",
+    "wrav/oembed": "^3.1"
   },
   "require-dev": {
     "craftcms/generator": "^2.0.0",

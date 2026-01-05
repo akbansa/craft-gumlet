@@ -130,6 +130,16 @@ checking new option 2
             {% endfor %}
         {% endif %}
     </div>
+
+    <div class="embed-section">
+        <h2>Featured Video (parse)</h2>
+        {{ craft.oembed.render('https://www.youtube.com/watch?v=jNQXAC9IVRw')|raw }}
+    </div>
+
+    <div class="embed-section">
+        <h2>Featured Video (parse) Gumlet</h2>
+        {{ craft.oembed.render('https://play.gumlet.io/embed/playlist/689475ba7afab80a3ef013db')|raw }}
+    </div>
 </main>
 </body>
 </html>

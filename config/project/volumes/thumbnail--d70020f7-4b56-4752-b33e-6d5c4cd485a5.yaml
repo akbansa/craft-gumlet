@@ -51,5 +51,5 @@ sortOrder: 1
 subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-transformFs: ''
+transformFs: main_filesystem
 transformSubpath: ''
