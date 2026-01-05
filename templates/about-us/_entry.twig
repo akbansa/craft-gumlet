@@ -66,6 +66,10 @@ d{% set aboutEntry = entry ?? craft.entries().section('aboutUs').one() %}
             box-shadow: 0 15px 45px rgba(43, 63, 95, 0.2);
             object-fit: cover;
         }
+        .embed-section {
+            width: 600px;
+            aspect-ratio: 16/9;
+        }
     </style>
 </head>
 <body>
@@ -138,7 +142,7 @@ checking new option 2
 
     <div class="embed-section">
         <h2>Featured Video (parse) Gumlet</h2>
-        {{ craft.oembed.render('https://play.gumlet.io/embed/playlist/689475ba7afab80a3ef013db')|raw }}
+        {{ craft.oembed.render('https://play.gumlet.io/embed/6900a9615ecad45f6c86ac46')|raw }}
     </div>
 </main>
 </body>
